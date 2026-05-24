@@ -12,12 +12,31 @@
 
 ---
 
+## ⚠️ 首次安装提示
+
+macOS 可能会提示 **"SculptBox 已损坏，无法打开"** 或 **"来自身份不明的开发者"**。
+
+这是因为软件还没有 Apple 开发者签名，不是真的坏了。解决方法：
+
+### 方法一（推荐）：终端运行一行命令
+
+```bash
+sudo xattr -rd com.apple.quarantine /Applications/SculptBox.app
+```
+
+### 方法二：系统设置允许
+
+打开 **系统设置 → 隐私与安全性**，向下滚动，在 **安全性** 部分找到 SculptBox，点击 **仍然打开**。
+
+---
+
 ## 🚀 快速开始
 
 1. 下载 DMG，拖入 Applications
-2. 启动 SculptBox
-3. Settings → Plugin Status → Install 部署桥接
-4. 重启 ZBrush
+2. 首次打开如果报错，按上面的方法解决
+3. 启动 SculptBox
+4. Settings → Plugin Status → Install 部署桥接
+5. 重启 ZBrush，开始使用
 
 ---
 
