@@ -45,7 +45,7 @@ Or go to **System Settings → Privacy & Security**, click **Open Anyway**.
 
 ### Brush Management
 
-> *[Screenshot: Main window with grid view of brushes]*
+<img src="promo/assets/screenshot_main.png" width="700" alt="Main window"/>
 
 SculptBox indexes your entire brush library. Thousands of brushes, loaded in seconds.
 
@@ -56,19 +56,19 @@ SculptBox indexes your entire brush library. Thousands of brushes, loaded in sec
 
 ### Thumbnail Preview
 
-> *[Screenshot: Brush thumbnails in S/M/L sizes]*
+<img src="promo/assets/screenshot_thumbnail_s.png" width="300" alt="Small"/> <img src="promo/assets/screenshot_thumbnail_l.png" width="300" alt="Large"/>
 
 Every brush shows its real thumbnail — no more guessing from file names. Native .ZBP parsing, 50ms per brush. Supports S/M/L three sizes.
 
 ### Send to ZBrush
 
-> *[Screenshot/GIF: Right-click send to ZBrush]*
+<img src="promo/assets/screenshot_send.png" width="400" alt="Send to ZBrush"/>
 
 Right-click any brush → **Send to ZBrush**. The brush loads instantly via IPC bridge. No more manual file browsing in ZBrush.
 
 ### Batch Operations
 
-> *[Screenshot: Batch selection in grid view]*
+<img src="promo/assets/screenshot_batch.png" width="700" alt="Batch selection"/>
 
 Select multiple brushes → batch send to ZBrush, batch export thumbnails, batch tag.
 
@@ -78,7 +78,7 @@ Select multiple brushes → batch send to ZBrush, batch export thumbnails, batch
 
 ### Plugin Status & One-Click Deploy
 
-> *[Screenshot: Plugin Status panel showing bridge health]*
+<img src="promo/assets/screenshot_plugin_status.png" width="600" alt="Plugin Status"/>
 
 Settings → Plugin Status shows you everything:
 - ZBrush installation status
