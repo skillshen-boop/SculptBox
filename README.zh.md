@@ -14,6 +14,7 @@
 |:----|:----|:-----|
 | macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
 
+
 ---
 
 ## ⚠️ 首次安装
