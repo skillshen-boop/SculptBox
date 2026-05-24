@@ -11,17 +11,15 @@
 ## 📥 下载
 
 | 版本 | 下载 | 说明 |
-|:----|:----|:-----|
-| macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
-| macOS V1.0 | [☁️ 百度网盘](https://pan.baidu.com/s/1BeFZfMoCmqbfOQDEYJQdSg?pwd=tayr) | 提取码: `tayr` |
+|:----|:----|:------|
+| macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | 直接下载 |
+| macOS V1.0 | [☁️ 百度网盘](https://pan.baidu.com/s/1BeFZfMoCmqbfOQDEYJQdSg?pwd=tayr) | 提取码: tayr |
 
 ---
 
 ## ⚠️ 首次安装
 
-macOS 可能会提示 **"SculptBox 已损坏，无法打开"**。
-
-这不是文件坏了。终端执行：
+macOS 可能提示 **"SculptBox 已损坏，无法打开"**。不是文件坏了，执行：
 
 ```bash
 sudo xattr -rd com.apple.quarantine /Applications/SculptBox.app
@@ -36,19 +34,100 @@ sudo xattr -rd com.apple.quarantine /Applications/SculptBox.app
 1. 下载 DMG，拖入 Applications
 2. 如果报错，执行上面的命令
 3. 启动 SculptBox
-4. Settings → Plugin Status → Install 部署桥接
-5. 重启 ZBrush，开始使用
+4. Settings → Plugin Status → Install 一键部署桥接
+5. 重启 ZBrush
 
 ---
 
-## ✨ 功能
+## ✨ 功能介绍
 
-- **笔刷管理** — 搜索、标签、收藏、分类，万级笔刷库毫秒级响应
-- **缩略图预览** — 原生 ZBP 解析，所见即所得
-- **Send to ZBrush** — 右键发送，实时加载
-- **批量操作** — 批量发送、批量导出
-- **4 语言** — 中文 · English · 日本語 · 한국어
-- **一键部署** — 1 分钟完成桥接安装
+### 笔刷管理
+
+> *[插图：主界面网格视图]*
+
+SculptBox 自动索引你的全部笔刷目录。几千个笔刷，几秒加载完成。
+
+- **搜索** — 输入关键词，实时过滤
+- **标签** — 10 个自动标签（雕刻/曲线/插入/工具...）+ 自定义标签
+- **收藏夹** — 星标收藏，一键切换
+- **分类** — 按目录浏览，按类型筛选
+
+### 缩略图预览
+
+> *[插图：S/M/L 三种缩略图尺寸]*
+
+每个笔刷实时显示真实缩略图，不用再靠文件名猜。原生 ZBP 解析，50ms 一个。支持 S/M/L 三级缩放。
+
+### Send to ZBrush
+
+> *[插图/动图：右键发送到 ZBrush]*
+
+任意笔刷上右键 → Send to ZBrush，通过 IPC 桥接实时加载。不用再在 ZBrush 里翻文件夹了。
+
+### 批量操作
+
+> *[插图：网格中多选笔刷]*
+
+多选笔刷 → 批量发送到 ZBrush、批量导出缩略图、批量打标签。
+
+### 多语言
+
+内置 4 种语言：中文、English、日本語、한국어，在 Settings 随时切换。
+
+### 桥接状态一键查看
+
+> *[插图：Plugin Status 面板]*
+
+Settings → Plugin Status 一目了然：
+- ZBrush 是否安装
+- 桥接脚本是否部署
+- IPC 目录是否就绪
+- LaunchAgent 状态
+
+点击 **Install**，1 分钟完成部署，不需要终端。
+
+---
+
+## 📖 使用说明
+
+### 添加笔刷目录
+
+1. 打开 SculptBox
+2. 点击右上角齿轮图标设置
+3. 进入 **扫描目录** → **添加**
+4. 选择放笔刷的文件夹（.ZBP / .ZBR / .MNU）
+5. 等待扫描完成
+
+### 搜索笔刷
+
+在顶栏搜索框输入关键词，结果实时过滤。右侧标签面板按分类筛选。
+
+### 发送到 ZBrush
+
+1. 确保 ZBrush 正在运行
+2. 右键点击任意笔刷
+3. 选择 **Send to ZBrush**
+4. 笔刷自动出现在 ZBrush 中
+
+### 批量发送
+
+1. 按住 Shift/Cmd 多选笔刷
+2. 右键 → Send to ZBrush
+3. SculptBox 通过 IPC 桥接逐个发送
+
+### 管理标签
+
+- 自动标签从文件名检测生成
+- 点击标签按分类筛选
+- 支持自定义标签，跨会话持久化
+
+---
+
+## 系统要求
+
+- macOS 10.15+
+- ZBrush 2026+（Send to ZBrush 功能需要）
+- Python 3.9+（开发用）
 
 ---
 
