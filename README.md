@@ -8,10 +8,7 @@
 
 | 版本 | 下载 | 说明 |
 |:----|:----|:-----|
-| V1.0 macOS | 📦 百度云盘（链接待填） | 适用于 ZBrush 2026+ |
-| V1.0 macOS | 📦 阿里云盘（链接待填） | 备用下载 |
-
-> 更多下载方式持续更新中
+| macOS V1.0 | [⬇️ GitHub Releases 下载](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
 
 ---
 
@@ -19,28 +16,28 @@
 
 1. 下载 DMG，拖入 Applications
 2. 启动 SculptBox
-3. 在 Settings → Plugin Status 中点击 Install 部署桥接
-4. 重启 ZBrush，开始使用
+3. Settings → Plugin Status → Install 部署桥接
+4. 重启 ZBrush
 
 ---
 
 ## ✨ 功能
 
 - **笔刷管理** — 搜索、标签、收藏、分类，万级笔刷库毫秒级响应
-- **缩略图预览** — 原生 ZBP 解析，50ms/brush，所见即所得
-- **Send to ZBrush** — 右键发送，单向桥接，实时加载
-- **批量操作** — 批量发送、批量导出、批量标记
+- **缩略图预览** — 原生 ZBP 解析，所见即所得
+- **Send to ZBrush** — 右键发送，实时加载
+- **批量操作** — 批量发送、批量导出
 - **4 语言** — 中文 / English / 日本語 / 한국어
-- **跨版本** — ZBrush 2026+，未来支持 Blender
+- **一键部署** — 1 分钟完成桥接安装
 
 ---
 
-## 🔗 相关链接
+## 🔗 链接
 
 - 官网：[sculptbox.net](https://sculptbox.net)
-- 反馈：[GitHub Issues](https://github.com/skillshen-boop/SculptBox/issues)
-- 交流群：QQ群（待创建） / Discord（待创建）
+- 下载：[GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases)
+- 反馈：[Issues](https://github.com/skillshen-boop/SculptBox/issues)
 
 ---
 
-*SculptBox V1.0 — 私有仓库，仅用于版本管理和分发*
+*SculptBox — 3D Asset Management Tool*
