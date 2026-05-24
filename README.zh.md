@@ -13,7 +13,7 @@
 | 版本 | 下载 | 说明 |
 |:----|:----|:-----|
 | macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
-
+| macOS V1.0 | [☁️ 百度网盘](https://pan.baidu.com/s/1BeFZfMoCmqbfOQDEYJQdSg?pwd=tayr) | 提取码: `tayr` |
 
 ---
 
@@ -37,7 +37,7 @@ sudo xattr -rd com.apple.quarantine /Applications/SculptBox.app
 2. 如果报错，执行上面的命令
 3. 启动 SculptBox
 4. Settings → Plugin Status → Install 部署桥接
-5. 重启 ZBrush
+5. 重启 ZBrush，开始使用
 
 ---
 

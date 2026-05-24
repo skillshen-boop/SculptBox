@@ -13,7 +13,7 @@
 | 버전 | 다운로드 | 비고 |
 |:----|:--------|:-----|
 | macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
-
+| macOS V1.0 | [☁️ Baidu Pan](https://pan.baidu.com/s/1BeFZfMoCmqbfOQDEYJQdSg?pwd=tayr) | 코드: `tayr` |
 
 ---
 

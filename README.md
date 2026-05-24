@@ -1,61 +1,62 @@
 # SculptBox V1.0
 
-3D 资产管理工具 — 让笔刷库随取随用
+**3D Asset Management Tool — Your brush library, at your fingertips.**
 
 ---
 
-## 📥 下载
-
-| 版本 | 下载 | 说明 |
-|:----|:----|:-----|
-| macOS V1.0 | [⬇️ GitHub Releases 下载](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
+English · [中文](README.zh.md) · [日本語](README.ja.md) · [한국어](README.ko.md)
 
 ---
 
-## ⚠️ 首次安装提示
+## 📥 Download
 
-macOS 可能会提示 **"SculptBox 已损坏，无法打开"** 或 **"来自身份不明的开发者"**。
+| Version | Download | Notes |
+|:--------|:---------|:------|
+| macOS V1.0 | [⬇️ GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases/latest) | ZBrush 2026+ |
+| macOS V1.0 | [☁️ Baidu Pan](https://pan.baidu.com/s/1BeFZfMoCmqbfOQDEYJQdSg?pwd=tayr) | Code: `tayr` |
 
-这是因为软件还没有 Apple 开发者签名，不是真的坏了。解决方法：
+---
 
-### 方法一（推荐）：终端运行一行命令
+## ⚠️ First Time Install
+
+macOS may show **"SculptBox is damaged and cannot be opened"** or **"from an unidentified developer"**.
+
+This is NOT a broken file — it just means the app hasn't been code-signed yet. Fix it with one command:
 
 ```bash
 sudo xattr -rd com.apple.quarantine /Applications/SculptBox.app
 ```
 
-### 方法二：系统设置允许
-
-打开 **系统设置 → 隐私与安全性**，向下滚动，在 **安全性** 部分找到 SculptBox，点击 **仍然打开**。
+Or go to **System Settings → Privacy & Security**, scroll down and click **Open Anyway**.
 
 ---
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-1. 下载 DMG，拖入 Applications
-2. 首次打开如果报错，按上面的方法解决
-3. 启动 SculptBox
-4. Settings → Plugin Status → Install 部署桥接
-5. 重启 ZBrush，开始使用
-
----
-
-## ✨ 功能
-
-- **笔刷管理** — 搜索、标签、收藏、分类，万级笔刷库毫秒级响应
-- **缩略图预览** — 原生 ZBP 解析，所见即所得
-- **Send to ZBrush** — 右键发送，实时加载
-- **批量操作** — 批量发送、批量导出
-- **4 语言** — 中文 / English / 日本語 / 한국어
-- **一键部署** — 1 分钟完成桥接安装
+1. Download the DMG, drag SculptBox into Applications
+2. If macOS blocks it, run the command above
+3. Launch SculptBox
+4. Go to **Settings → Plugin Status → Install** to deploy the ZBrush bridge
+5. Restart ZBrush and start managing your brushes
 
 ---
 
-## 🔗 链接
+## ✨ Features
 
-- 官网：[sculptbox.net](https://sculptbox.net)
-- 下载：[GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases)
-- 反馈：[Issues](https://github.com/skillshen-boop/SculptBox/issues)
+- **Brush Management** — Search, tag, favorite, filter. Thousands of brushes, millisecond response
+- **Thumbnail Preview** — Native .ZBP parsing, see what you get before you load
+- **Send to ZBrush** — Right-click send, real-time loading via IPC bridge
+- **Batch Operations** — Batch send, batch export, batch tag
+- **4 Languages** — English · 中文 · 日本語 · 한국어
+- **One-Click Deploy** — Bridge installation in under a minute, no terminal needed
+
+---
+
+## 🔗 Links
+
+- Website: [sculptbox.net](https://sculptbox.net)
+- Download: [GitHub Releases](https://github.com/skillshen-boop/SculptBox/releases)
+- Feedback: [GitHub Issues](https://github.com/skillshen-boop/SculptBox/issues)
 
 ---
 
