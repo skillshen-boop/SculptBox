@@ -50,8 +50,15 @@ Or go to **System Settings → Privacy & Security**, click **Open Anyway**.
 SculptBox indexes your entire brush library. Thousands of brushes, loaded in seconds.
 
 - **Search** — Type any keyword, results appear instantly
+
+<img src="promo/assets/screenshot_search.png" width="700" alt="Search"/>
+
 - **Tags** — 10 auto-tags (Culpting, Curve, Insert, Utility...) + custom tags
 - **Favorites** — Star your most-used brushes, access them in one click
+
+<img src="promo/assets/screenshot_favorites.png" width="400" alt="Favorites"/>
+<img src="promo/assets/screenshot_tags.png" width="300" alt="Tags"/>
+
 - **Filter** — Browse by category or scan directory
 
 ### Thumbnail Preview
@@ -76,6 +83,8 @@ Select multiple brushes → batch send to ZBrush, batch export thumbnails, batch
 
 4 languages built-in: English, Chinese, Japanese, Korean. Switch anytime in Settings.
 
+<img src="promo/assets/screenshot_language.png" width="500" alt="Multi-language"/>
+
 ### Plugin Status & One-Click Deploy
 
 <img src="promo/assets/screenshot_plugin_status.png" width="600" alt="Plugin Status"/>
@@ -87,6 +96,10 @@ Settings → Plugin Status shows you everything:
 - LaunchAgent status
 
 Click **Install** to deploy the bridge in under a minute. No terminal, no config files.
+
+### Settings & About
+
+<img src="promo/assets/screenshot_settings.png" width="500" alt="Settings"/> <img src="promo/assets/screenshot_about.png" width="300" alt="About"/>
 
 ---
 
