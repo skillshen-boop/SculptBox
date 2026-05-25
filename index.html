@@ -9,75 +9,106 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0d0d0d; color: #e0e0e0; line-height: 1.6; }
 .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
-nav { padding: 20px 0; border-bottom: 1px solid #222; }
+nav { padding: 16px 0; border-bottom: 1px solid #222; }
 nav .container { display: flex; justify-content: space-between; align-items: center; }
-nav h1 { color: #FF7B00; font-size: 20px; font-weight: 700; }
-nav a { color: #888; text-decoration: none; font-size: 14px; }
-nav a:hover { color: #FF7B00; }
-.hero { text-align: center; padding: 80px 0 60px; }
-.hero h2 { font-size: 42px; font-weight: 800; color: #fff; margin-bottom: 16px; }
+nav .logo-wrap { display: flex; align-items: center; gap: 10px; }
+nav .logo-wrap img { height: 40px; }
+nav .logo-wrap span { color: #FF7B00; font-size: 20px; font-weight: 700; }
+nav .nav-links a { color: #888; text-decoration: none; font-size: 14px; margin-left: 20px; }
+nav .nav-links a:hover { color: #FF7B00; }
+.nav-dl { background: #FF7B00; color: #0d0d0d !important; padding: 6px 16px; border-radius: 6px; font-weight: 600; margin-left: 20px; text-decoration: none; font-size: 14px; }
+.nav-dl:hover { background: #FF9823; }
+.hero { text-align: center; padding: 60px 0 40px; }
+.hero h2 { font-size: 38px; font-weight: 800; color: #fff; margin-bottom: 12px; }
 .hero h2 span { color: #FF7B00; }
-.hero p { font-size: 18px; color: #888; max-width: 600px; margin: 0 auto 32px; }
-.btn { display: inline-block; background: #FF7B00; color: #0d0d0d; padding: 14px 40px; border-radius: 8px; font-weight: 700; font-size: 16px; text-decoration: none; transition: background 0.2s; }
+.hero p { font-size: 16px; color: #888; max-width: 540px; margin: 0 auto 28px; }
+.btn { display: inline-block; background: #FF7B00; color: #0d0d0d; padding: 12px 36px; border-radius: 8px; font-weight: 700; font-size: 15px; text-decoration: none; transition: background .2s; }
 .btn:hover { background: #FF9823; }
-.btn-secondary { background: #222; color: #e0e0e0; margin-left: 12px; }
-.btn-secondary:hover { background: #333; }
+.btn-ghost { background: transparent; color: #e0e0e0; border: 1px solid #333; margin-left: 10px; }
+.btn-ghost:hover { border-color: #FF7B00; }
+.sub-info { margin-top: 10px; font-size: 13px; color: #555; }
+.sub-info a { color: #888; text-decoration: none; }
+.sub-info a:hover { color: #FF7B00; }
+.video-wrap { margin: 32px auto; max-width: 800px; border-radius: 12px; overflow: hidden; border: 1px solid #222; }
+.video-wrap video { width: 100%; display: block; }
 .features { padding: 60px 0; }
-.features h3 { font-size: 28px; font-weight: 700; color: #fff; text-align: center; margin-bottom: 48px; }
-.grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.card { background: #1a1a1a; border: 1px solid #222; border-radius: 12px; padding: 24px; }
-.card h4 { color: #FF7B00; font-size: 16px; margin-bottom: 8px; }
-.card p { font-size: 14px; color: #888; }
-.screenshots { padding: 60px 0; }
-.screenshots h3 { font-size: 28px; font-weight: 700; color: #fff; text-align: center; margin-bottom: 48px; }
-.shot-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.shot-grid img { width: 100%; border-radius: 8px; border: 1px solid #222; }
-footer { text-align: center; padding: 40px 0; border-top: 1px solid #222; color: #555; font-size: 13px; }
+.features h3 { font-size: 26px; font-weight: 700; color: #fff; text-align: center; margin-bottom: 40px; }
+.feat-card { background: #1a1a1a; border: 1px solid #222; border-radius: 12px; margin-bottom: 20px; overflow: hidden; display: flex; align-items: center; }
+.feat-card .feat-img { flex: 0 0 45%; max-width: 45%; }
+.feat-card .feat-img img { width: 100%; display: block; }
+.feat-card .feat-text { flex: 1; padding: 28px; }
+.feat-card .feat-text h4 { color: #FF7B00; font-size: 18px; margin-bottom: 8px; }
+.feat-card .feat-text p { font-size: 14px; color: #888; line-height: 1.7; }
+.feat-card.reverse { flex-direction: row-reverse; }
+.cta { text-align: center; padding: 60px 0; border-top: 1px solid #222; }
+.cta h3 { font-size: 24px; color: #fff; margin-bottom: 20px; }
+footer { text-align: center; padding: 32px 0; color: #555; font-size: 13px; }
+footer .langs { margin-bottom: 16px; }
+footer .langs a { color: #888; text-decoration: none; margin: 0 8px; font-size: 13px; }
+footer .langs a:hover { color: #FF7B00; }
 footer a { color: #888; text-decoration: none; }
 footer a:hover { color: #FF7B00; }
-.langs { margin-bottom: 24px; }
-.langs a { color: #888; text-decoration: none; margin: 0 8px; font-size: 13px; }
-.langs a:hover { color: #FF7B00; }
 @media (max-width: 640px) {
-  .hero h2 { font-size: 28px; }
-  .grid, .shot-grid { grid-template-columns: 1fr; }
+  .hero h2 { font-size: 26px; }
+  .feat-card { flex-direction: column !important; }
+  .feat-card .feat-img { flex: none; max-width: 100%; }
 }
 </style>
 </head>
 <body>
 <nav><div class="container">
-<div style="display:flex;align-items:center;gap:10px"><img src="promo/assets/logo.png" alt="SculptBox" style="height:80px"><h1 style="margin:0">SculptBox</h1></div>
-<a href="https://github.com/skillshen-boop/SculptBox/releases/latest">Download</a>
+<div class="logo-wrap"><img src="promo/assets/logo.png" alt="SculptBox"><span>SculptBox</span></div>
+<div>
+<a href="#features">Features</a>
+<a href="https://github.com/skillshen-boop/SculptBox/releases/latest" class="nav-dl">Download</a>
+</div>
 </div></nav>
 
 <section class="hero"><div class="container">
 <h2>让你的笔刷库<br><span>随取随用</span></h2>
-<p>管理万级笔刷，毫秒级搜索，一键发送到 ZBrush。<br>支持 4 种语言。免费使用。</p>
-<a href="https://github.com/skillshen-boop/SculptBox/releases/latest" class="btn">Download SculptBox</a>
-<a href="https://github.com/skillshen-boop/SculptBox" class="btn btn-secondary">GitHub</a>
-<div style="margin-top:12px;font-size:13px;color:#555;">macOS V1.0 &middot; ZBrush 2026+</div>
+<p>管理万级笔刷，毫秒级搜索，一键发送到 ZBrush。<br>4 种语言 · 免费使用</p>
+<a href="https://github.com/skillshen-boop/SculptBox/releases/latest" class="btn">⬇ Download SculptBox</a>
+<a href="https://www.youtube.com/watch?v=ONkwdNhV3k8" class="btn btn-ghost">▶ Watch Video</a>
+<div class="sub-info">
+macOS V1.0 · ZBrush 2026+ · <a href="https://github.com/skillshen-boop/SculptBox">GitHub</a>
+</div>
 </div></section>
 
-<section class="features"><div class="container">
+<div class="video-wrap">
+<video controls poster="promo/assets/screenshot_main.png">
+<source src="promo/video/sculptbox.mp4" type="video/mp4">
+</video>
+</div>
+
+<section class="features" id="features"><div class="container">
 <h3>Features</h3>
-<div class="grid">
-<div class="card"><h4>Search</h4><p>Type any keyword, results appear instantly. No more guessing from file names.</p></div>
-<div class="card"><h4>Tags</h4><p>10 auto-tags + custom tags. Your brushes are automatically categorized.</p></div>
-<div class="card"><h4>Favorites</h4><p>Star your most-used brushes. Access them in one click.</p></div>
-<div class="card"><h4>Send to ZBrush</h4><p>Right-click send, real-time loading via IPC bridge. No 300-brush limit.</p></div>
-<div class="card"><h4>Batch</h4><p>Batch send, batch export, batch tag. Double your efficiency.</p></div>
-<div class="card"><h4>4 Languages</h4><p>English &middot; 中文 &middot; 日本語 &middot; 한국어</p></div>
+
+<div class="feat-card">
+<div class="feat-img"><img src="promo/assets/screenshot_main.png" alt="Main"></div>
+<div class="feat-text"><h4>Brush Management</h4><p>Thousands of brushes, millisecond response. Full thumbnail preview — no more guessing from file names. S/M/L grid sizes.</p></div>
 </div>
+
+<div class="feat-card reverse">
+<div class="feat-img"><img src="promo/assets/screenshot_search.png" alt="Search"></div>
+<div class="feat-text"><h4>Search & Tags</h4><p>Instant keyword search. 10 auto-tags (Culpting, Curve, Insert, Utility) plus custom tags. Your brushes, organized your way.</p></div>
+</div>
+
+<div class="feat-card">
+<div class="feat-img"><img src="promo/assets/screenshot_send.png" alt="Send"></div>
+<div class="feat-text"><h4>Send to ZBrush</h4><p>Right-click send, real-time IPC bridge. Batch send multiple brushes. No more 300-brush limit in ZBrush.</p></div>
+</div>
+
+<div class="feat-card reverse">
+<div class="feat-img"><img src="promo/assets/screenshot_batch.png" alt="Batch"></div>
+<div class="feat-text"><h4>Batch & Deploy</h4><p>Batch send, batch export, batch tag. One-click bridge deployment — installs in under a minute. Multi-language (EN/ZH/JA/KO).</p></div>
+</div>
+
 </div></section>
 
-<section class="screenshots"><div class="container">
-<h3>Screenshots</h3>
-<div class="shot-grid">
-<img src="promo/assets/screenshot_main.png" alt="Main window">
-<img src="promo/assets/screenshot_search.png" alt="Search">
-<img src="promo/assets/screenshot_send.png" alt="Send to ZBrush">
-<img src="promo/assets/screenshot_batch.png" alt="Batch">
-</div>
+<section class="cta"><div class="container">
+<h3>Ready to take control?</h3>
+<a href="https://github.com/skillshen-boop/SculptBox/releases/latest" class="btn">⬇ Download Free</a>
+<a href="https://www.youtube.com/watch?v=ONkwdNhV3k8" class="btn btn-ghost">▶ YouTube</a>
 </div></section>
 
 <footer><div class="container">
@@ -87,7 +118,7 @@ footer a:hover { color: #FF7B00; }
 <a href="https://github.com/skillshen-boop/SculptBox/blob/main/README.ja.md">日本語</a>
 <a href="https://github.com/skillshen-boop/SculptBox/blob/main/README.ko.md">한국어</a>
 </div>
-<p>&copy; 2026 SculptBox &mdash; <a href="https://github.com/skillshen-boop/SculptBox">GitHub</a></p>
+<p><a href="https://sculptbox.net">sculptbox.net</a> · <a href="https://github.com/skillshen-boop/SculptBox">GitHub</a> · <a href="https://www.youtube.com/watch?v=ONkwdNhV3k8">YouTube</a></p>
 </div></footer>
 </body>
 </html>
